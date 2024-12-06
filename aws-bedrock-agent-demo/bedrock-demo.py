@@ -73,10 +73,6 @@ Observation will be the result of running those actions.
 
 Your available actions are:
 
-calculate:
-e.g. calculate: 4 * 7 / 3
-Runs a calculation and returns the number - uses Python so be sure to use floating point syntax if necessary
-
 wikipedia:
 e.g. wikipedia: Hebei
 Returns a summary from searching Wikipedia
@@ -184,12 +180,6 @@ def wikipedia(q):
         "format": "json"
     }).json()["query"]["search"][0]["snippet"]
 
-
-@task(name="chat_bot_calculate")
-def calculate(what):
-    logger.warning(f"call calculate eval({what}) ...")
-    return eval(what)
-
 @task(name="chat_bot_google")
 def google(query):
     headers = {
@@ -212,8 +202,7 @@ def google(query):
 
 known_actions = {
     "wikipedia": wikipedia,
-    "calculate": calculate,
-    #"google": google,
+    "google": google,
 }
 
 try:
