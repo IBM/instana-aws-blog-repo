@@ -1,8 +1,8 @@
 # This code is Apache 2 licensed:
 # https://www.apache.org/licenses/LICENSE-2.0
 
-#from dotenv import load_dotenv
-#load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 import os
 import boto3
@@ -147,8 +147,8 @@ def query(question, max_turns=3):
         i += 1
         result = bot(next_prompt)
         if result == None:
-          print("return None !!!")
-          return
+            print("return None !!!")
+            return
 
         print(result)
         actions = [action_re.match(a) for a in result.split('\n') if action_re.match(a)]
@@ -206,6 +206,6 @@ known_actions = {
 }
 
 try:
-  query("What is the captical of France")
+    query("What is the captical of France")
 except Exception as error:
-  logger.debug("Traceloop: exception - " + error)
+    logger.debug("Traceloop: exception - " + error)
