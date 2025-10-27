@@ -35,7 +35,20 @@ You can manually activate the environment:
 source .venv/bin/activate
 ```
 
-### 3. Update the creds in `.env` file
+### 3. Update the envs in `.env` file
+
+Update **AWS Bedrock** creds such as 
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+- AWS_SESSION_TOKEN
+
+Update Serper credential
+- SERPER_API_KEY
+
+Refer following documentation to know about **Traceloop environmental variables**:
+https://www.ibm.com/docs/en/instana-observability/1.0.300?topic=started-traceloop-instrumentation#configuring-the-environment
+
+
 
 ### 4. For the collection of metrics, Install OTel Data Collector for GenAI (ODCG)
 
