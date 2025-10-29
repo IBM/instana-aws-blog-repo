@@ -48,8 +48,6 @@ Update Serper credential
 Refer following documentation to know about **Traceloop environmental variables**:
 https://www.ibm.com/docs/en/instana-observability/1.0.300?topic=started-traceloop-instrumentation#configuring-the-environment
 
-
-
 ### 4. For the collection of metrics, Install OTel Data Collector for GenAI (ODCG)
 
 To install the data collector, Refer: https://www.ibm.com/docs/en/instana-observability/1.0.300?topic=started-install-otel-data-collector-genai-odcg
