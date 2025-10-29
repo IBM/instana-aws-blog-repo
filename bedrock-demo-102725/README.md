@@ -68,7 +68,3 @@ uv run main.py
 ![Trace2](assets/image-1.png)
 ![Metrics](assets/image-2.png)
 
-## References
-
-1. Traceloop configuration: https://www.ibm.com/docs/en/instana-observability/1.0.300?topic=started-traceloop-instrumentation#configuring-the-environment
-
